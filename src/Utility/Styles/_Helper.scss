@@ -1,0 +1,35 @@
+// ===== Mixins & Functions =====
+
+// Colour & BG Colour
+@mixin colorBgColor($color, $bgColor) {
+  color: $color;
+  background-color: $bgColor;
+}
+
+// Font
+@mixin font($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+// Width & Height
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// Flexbox
+@mixin flex($dir, $align, $justify) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+// Grid
+@mixin grid($column, $align, $justify) {
+  display: grid;
+  grid-template-columns: $column;
+  align-items: $align;
+  justify-content: $justify;
+}

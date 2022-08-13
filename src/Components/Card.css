@@ -1,0 +1,37 @@
+.col-Card-main {
+    background-color: white;
+    margin: 30px;
+    width: 211px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    padding: 12px;
+    height: 415px;
+}
+
+img {
+    width: 179px;
+    height: 221px;
+}
+
+.Data-card{
+    background-color:aqua;
+    display: flex;
+
+}
+.col-name{
+    display: flex;
+    justify-content: space-around;
+}
+.col-name h4{
+    margin-top: 3px;
+}
+
+.Data-card {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ .Data-card > div[class*='col-'] {
+   display: flex;
+ }

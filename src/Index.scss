@@ -1,0 +1,52 @@
+@use "./Utility/Styles/Variable" as *;
+@use "./Utility/Styles/Helper" as *;
+
+/* Apply to All Components */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	transition: all 0.1s linear;
+
+	& .icon {
+		transition: none;
+	}
+}
+
+/* Body */
+:is(body, input, button, option) {
+	font-family: var(--font_primary);
+}
+
+:is(button, input, select, option) {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: none;
+}
+
+:is(h1, h2, h3, h4, h5, h6, p, a, th, td) {
+	color: var(--clr_blueDark);
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Default Elements Customization */
+/* Selection */
+::selection {
+	@include colorBgColor(var(--clr_white), var(--clr_blackFade));
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	@include widthHeight(15px, 15px);
+}
+
+::-webkit-scrollbar-thumb {
+	border: 3.5px solid var(--clr_white);
+	border-radius: 100px;
+	background: var(--clr_blue);
+}
